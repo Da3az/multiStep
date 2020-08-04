@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.js">
+    </script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+    <title></title>
+  </head>
+  <body id="mod">
+    <div class="form-container">
+      <form class="" action="index.html" method="post">
+        <div class="question" id="question1">
+          <div class="question-title">
+            <h2>Get more!</h2>
+            <p>We help companys to reach the target group and convert them to leads and sales.
+                      </div>
+          <div class="question-intro">
+            <p>You want more leads?</p>
+          </div>
+          <div class="question-submit">
+            <label for="1-1" >
+              <i class="fas fa-times fa-2x"></i>
+              <p>No</p>
+            </label>
+            <input type="text" id="1-1" type="radio" name="answer_1" value="NO" class='1'>
+            <label for="1-2" >
+              <i class="fas fa-check fa-2x"></i>
+              <p>Yes</p>
+            </label>
+            <input type="text" id="1-2" type="radio" name="answer_1" value="YES" class='1' >
+          </div>
+        </div>
+        <div class="question" id="question2">
+          <div class="question-title">
+            <h2>What kind of business you run?</h2>
+          </div>
+          <div class="question-submit">
+            <label for="2-1" >
+              <i class="far fas fa-boxes fa-2x"></i>
+              <p>Products</p>
+            </label>
+            <input type="text" type="radio" name="answer_2" value="Products" id="2-1" class= '2'>
+            <label for="2-2" >
+              <i class="far fas fa-handshake fa-2x"></i>
+              <p>Service</p>
+            </label>
+            <input type="text" type="radio" name="answer_2" value="Service" id="2-2" class= '2'>
+            <label for="2-3" >
+              <i class="far fas fa-external-link-alt fa-2x"></i>
+              <p>Affiliate</p>
+            </label>
+            <input type="text" type="radio" name="answer_2"  value="Affiliate" id="2-3" class= '2'>
+            <label for="2-4" >
+              <i class="far fas fa-money-check fa-2x"></i>
+              <p>Other</p>
+            </label>
+            <input type="text" type="radio" name="answer_2"  value="Other" id="2-4" class= '2'>
+          </div>
+      	</div>
+        <div class="question" id="question3">
+          <div class="question-title">
+              <h2>How much budget you spent in online ads?</h2>
+            </div>
+          <div class="question-submit">
+              <label for="3-1" >
+                <i class="far fas fa-dollar-sign fa-2x"></i>
+                <p>&lt; 1.000</p>
+              </label>
+              <input type="text" type="radio" name="answer_3" value="< 1.000" id="3-1" class= '3'>
+              <label for="3-2" >
+                <i class="far fas fa-dollar-sign fa-2x"></i>
+                <p>1.000 - 5.000</p>
+              </label>
+              <input type="text" type="radio" name="answer_3" value="1.000 - 5.000" id="3-2" class= '3'>
+              <label for="3-3" >
+                <i class="far fas fa-dollar-sign fa-2x"></i>
+                <p>5.000-10.000</p>
+              </label>
+              <input type="text" type="radio" name="answer_3" value="5.000-10.000}" id="3-3" class= '3'>
+              <label for="3-4" >
+                <i class="far fas fa-money-check fa-2x"></i>
+                <p>Other</p>
+              </label>
+              <input type="text" type="radio" name="answer_3" value="> 10.000" id="3-4" class= '3'>
+            </div>
+		  	</div>
+	      <div class="question form" id="question4">
+          <form class="question-form" action="submit" method="post">
+            <h2>Perfect, let us connect</h2>
+            <ul>
+              <li><input type="text" name="fname" value="" placeholder="Firstname" required ></li>
+              <li><input type="email" name="email" value="" placeholder="E-Mail" required ></li>
+              <li><input type="text" name="mobile" value="" placeholder="Mobile" required ></li>
+              <li class="check"><input type="checkbox" name="checkbox" value="" id="checkbox" required ><label id="checked" for="checkbox">I have read and accept the <a>privacy policy</a></label></li>
+              <li>
+               <button type="submit" name="button">Sent</button>
+              </li>
+            </ul>
+
+
+
+
+          </form>
+        </div>
+      </form>
+    </div>
+    <div class="steps-icon">
+      <i class="fas fa-dice-one dice"  id="0"></i>
+      <i class="fas fa-dice-two dice"  id="1"></i>
+      <i class="fas fa-dice-three dice" id="2"></i>
+      <i class="fas fa-dice-four dice"   id="3"></i>
+    </div>
+    <div class="steps-index">
+      <div class="previous">
+        <a id="previous" href="#">< previous</a>
+      </div>
+
+    </div>
+  </body>
+</html>

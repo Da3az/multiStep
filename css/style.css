@@ -1,0 +1,238 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+
+
+html{
+  width: 100%;
+  height: 100%;
+}
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 80%;
+  margin: auto;
+}
+
+.question{
+  margin-top: 0px;
+}
+
+.form-container{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 60%;
+}
+
+form{
+  width: 100%;
+}
+
+h2{
+  font-size: 1.5em;
+}
+
+p{
+  font-size: 1em;
+}
+
+.question:not(:first-child){
+  display: none;
+}
+
+
+.question-title{
+  width: 100%;
+  margin-bottom: 80px;
+}
+
+.question-title h2,.question-title p {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.question-intro{
+  margin: 20px 0px 50px 0px;
+  font-size: 1.3em;
+  font-weight: lighter;
+}
+
+.question-submit{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.question-submit label{
+  padding: 10px 10px 10px 10px;
+  width: 40%;
+  height: 100px;
+  color: white;
+  margin: auto;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  background-color: #007bff75;
+  cursor: pointer;
+  box-shadow: inset 400px 0px 0px 20px #007bff,inset -400px 0px 0px 20px #007bff;
+  transition: box-shadow .5s;
+  animation: fadeIn .5s ease-in;
+}
+
+@keyframes fadeIn {
+  from{opacity: 0}
+  to{opacity: 1}
+}
+
+.question-submit label:hover{
+  box-shadow: none
+}
+
+
+svg,p{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+form h4 {
+  display: flex;
+  justify-content: center;
+}
+
+form input{
+  display: none;
+}
+
+.steps-index{
+  margin-top: 50px;
+  display: flex;
+
+}
+
+.steps-icon {
+  padding-left: 30px;
+  padding-right: 30px;
+  font-size: 3em;
+
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+  color: #007bff;
+
+}
+
+.steps-icon svg{
+  opacity: .2;
+}
+
+.steps-icon svg:first-child{
+  opacity: 1;
+}
+
+
+.previous{
+  height: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+
+}
+
+a{
+  color: black;
+  font-style:normal;
+  margin-top: auto;
+}
+
+a:hover{
+  color: #007bff
+}
+
+.dice{
+  transition: opacity .5s ease-in
+}
+
+.form input{
+  display: block;
+  width: 80%
+}
+
+.form {
+  margin-top: 0px
+}
+
+.form h2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.form li{
+  list-style: none;
+  margin: auto;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  height: 40px;
+}
+
+.form ul{
+  display: flex;
+  justify-content:center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form li input{
+  height: 100%;
+  width:100%;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: 1px solid #0000002e;
+}
+
+#mod .check{
+  display: flex;
+  margin-left: 10px;
+}
+
+#mod .check input{
+  width: 15px;
+  height: 15px;
+  transform: translateY(5px);
+}
+
+.check label{
+  width: 90%;
+  margin-left: 10px;
+}
+
+button{
+  width: 100%;
+  height: 100%;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#checked a {
+  color: #007bff;
+  cursor:pointer;
+}
+#checked a:hover{
+  text-decoration: underline;
+}
