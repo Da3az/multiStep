@@ -37,6 +37,11 @@ body{
   margin-top: .5em;
 }
 
+#question4 .question-submit{
+  display: flex;
+  flex-direction: column;
+}
+
 #question5 h2{
   margin-bottom: 2em
 }
