@@ -41,22 +41,22 @@
           </div>
           <div class="question-submit">
             <label for="2-1" >
-              <i class="far fas fa-boxes fa-2x"></i>
+              <img src="images/products.png" alt="">
               <p>Products</p>
             </label>
             <input type="text" type="radio" name="answer_2" value="Products" id="2-1" class= '2'>
             <label for="2-2" >
-              <i class="far fas fa-handshake fa-2x"></i>
+              <img src="images/services.png" alt="">
               <p>Service</p>
             </label>
             <input type="text" type="radio" name="answer_2" value="Service" id="2-2" class= '2'>
             <label for="2-3" >
-              <i class="far fas fa-external-link-alt fa-2x"></i>
+              <img src="images/affiliate.png" alt="">
               <p>Affiliate</p>
             </label>
             <input type="text" type="radio" name="answer_2"  value="Affiliate" id="2-3" class= '2'>
             <label for="2-4" >
-              <i class="far fas fa-money-check fa-2x"></i>
+              <img src="images/other.png" alt="">
               <p>Other</p>
             </label>
             <input type="text" type="radio" name="answer_2"  value="Other" id="2-4" class= '2'>
@@ -89,7 +89,32 @@
               <input type="text" type="radio" name="answer_3" value="> 10.000" id="3-4" class= '3'>
             </div>
 		  	</div>
-	      <div class="question form" id="question4">
+        <div class="question" id="question4">
+          <div class="question-title">
+              <h2>What do you think about our services ?</h2>
+          </div>
+          <div class="question-submit">
+            <textarea name="name" rows="8" cols="80" placeholder="Your opinion matters to us"></textarea>
+            <input type="text" type="radio" name="answer_4" value="opinion" id="4-1" class= '4'>
+
+             <label for="4">Next</label>
+
+          </div>
+        </div>
+        <div class="question form" id="question5">
+          <h2>More about you</h2>
+            <ul>
+              <li class="check"><input type="checkbox" name="intrested" value="" id="5-1" ><label class="checked" for="5-1">I am intrested in your services</label></li>
+              <li class="check"><input type="checkbox" name="update" value="" id="5-2" ><label class="checked" for="5-2">I would like to receive updates in my email</a></label></li>
+              <li class="check"><input type="checkbox" name="questions" value="" id="5-3"  ><label class="checked" for="5-3">I have more questions about your products</a></label></li>
+              <li class="check"><input type="checkbox" name="contribute" value="" id="5-4"  ><label class="checked" for="5-4">I am willing to contribute in the future</a></label></li>
+              <div class="question-submit">
+                <label  for="5">Next</label>
+              </div>
+
+          </ul>
+        </div>
+        <div class="question form" id="question6">
           <form class="question-form" action="submit" method="post">
             <h2>Perfect, let us connect</h2>
             <ul>
@@ -98,7 +123,7 @@
               <li><input type="text" name="mobile" value="" placeholder="Mobile" required ></li>
               <li class="check"><input type="checkbox" name="checkbox" value="" id="checkbox" required ><label id="checked" for="checkbox">I have read and accept the <a>privacy policy</a></label></li>
               <li>
-               <button type="submit" name="button">Sent</button>
+               <label class="checked"><button type="submit" name="button">Sent</button></label>
               </li>
             </ul>
 
@@ -114,6 +139,8 @@
       <i class="fas fa-dice-two dice"  id="1"></i>
       <i class="fas fa-dice-three dice" id="2"></i>
       <i class="fas fa-dice-four dice"   id="3"></i>
+      <i class="fas fa-dice-five dice"   id="4"></i>
+      <i class="fas fa-dice-six dice"   id="5"></i>
     </div>
     <div class="steps-index">
       <div class="previous">

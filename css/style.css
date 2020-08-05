@@ -25,7 +25,20 @@ body{
 }
 
 .question{
+  height: 90%;
   margin-top: 0px;
+  animation: fadeIn .5s ease-in;
+}
+
+#mod #question2 .question-submit label{
+  height: 200px;
+  margin-left: .5em;
+  margin-right: .5em;
+  margin-top: .5em;
+}
+
+#question5 h2{
+  margin-bottom: 2em
 }
 
 .form-container{
@@ -72,6 +85,7 @@ p{
 .question-submit{
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .question-submit label{
@@ -87,7 +101,7 @@ p{
   cursor: pointer;
   box-shadow: inset 400px 0px 0px 20px #007bff,inset -400px 0px 0px 20px #007bff;
   transition: box-shadow .5s;
-  animation: fadeIn .5s ease-in;
+
 }
 
 @keyframes fadeIn {
@@ -164,7 +178,7 @@ a:hover{
   transition: opacity .3s ease-in
 }
 
-.form input{
+#mod .form input{
   display: block;
   width: 80%
 }
@@ -179,7 +193,7 @@ a:hover{
   margin-bottom: 20px;
 }
 
-.form li{
+ li{
   list-style: none;
   margin: auto;
   width: 100%;
@@ -235,4 +249,56 @@ button{
 }
 #checked a:hover{
   text-decoration: underline;
+}
+
+img{
+  height: 80%;
+  width: 50%;
+  margin: auto;
+}
+
+#mod #question4 label{
+  height: 50px;
+  border-radius: 10px;
+  text-align: center;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+#question5 label{
+  height: 50px;
+  border-radius: 10px;
+  width: 50%;
+
+}
+
+#question5 .check {
+  margin-left: 10%;
+}
+
+#question5 .question-submit label{
+  text-align: center;
+  margin: 0px;
+  margin-top: 3em;
+}
+
+label:hover{
+  box-shadow: none
+}
+
+textarea{
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+
+
+li input{
+  margin: auto;
+
+}
+
+.check input {
+  margin: 0px;
+  margin-left: 80px;
 }
