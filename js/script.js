@@ -6,15 +6,21 @@ var labels = $('label')
 var order = 0;
 
 for (var i = 0; i < labels.length; i++) {
+
    $(labels[i]).click(function(e){
-      if($(this).attr('id')!='checked'){
+      console.log('#'+$(this).prop('for'))
+      $('#'+$(this).prop('for')).attr("checked", "checked")
+      console.log($(this).attr('class')!='checked')
+      if(($(this).attr('id')!='checked') && ($(this).attr('class')!='checked')){
       $('#'+$(this).prop('for')).attr("checked", "checked")
       console.log($(this).prop('for').charAt(0))
       $('.dice').css('opacity','0.2')
       order = parseInt($(this).prop('for').charAt(0))
+      console.log($('#'+order))
       $('#'+order).css('opacity','1')
       $('.question').css('display','none')
       $('#question'+(order+1)).css('display', 'block')
+      console.log(order)
     }
   })
 
