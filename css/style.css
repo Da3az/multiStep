@@ -211,7 +211,8 @@ a:hover{
   display: flex;
   justify-content:center;
   flex-direction: column;
-  width: 100%;
+  width: 80%;
+  margin: auto;
 }
 
 .form li input{
@@ -258,8 +259,8 @@ button{
 }
 
 img{
-  height: 80%;
-  width: 50%;
+  height: 100px;
+  width: 100px;
   margin: auto;
 }
 
